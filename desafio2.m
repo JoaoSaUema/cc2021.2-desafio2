@@ -49,3 +49,21 @@ v1(x2, y2)= 1;
 dist = sqrt(pow2(x2-x1)+pow2(y2-y1)); %calculo da distancia%
 
 
+%Calcule quantos litros/km um automóvel faz e quanto de combustível%
+%foi gasto na viagem. Utilize a entrada pelo usuário%
+
+precogas = 6; %anotação de valor para combustivel%
+
+%coleta de dados das quantidades de combustível%
+
+prompt = 'Insira a quantidade de litros no inicio da viagem'
+volumeinit = input(prompt);
+prompt = 'Insira a quantidade de litros no fim da viagem'
+volumefinal = input(prompt);
+
+%calculo de volume de combustivel gasto na viagem%
+
+volumetotal = volumeinit - volumefinal;
+precogasto = volumetotal .* precogas
+
+
