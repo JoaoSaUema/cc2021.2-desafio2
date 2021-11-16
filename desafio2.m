@@ -67,3 +67,18 @@ volumetotal = volumeinit - volumefinal;
 precogasto = volumetotal .* precogas
 
 
+%Calcule o volume de objetos de altura h e raio R. Utilize a entrada dos dados pelo usuário.%
+
+%Definindo o valor de Pi%
+pi = 3.14;
+
+%coletando dados de altura e raio%
+
+prompt = 'Insira o valor da altura do objeto';
+h = input(prompt);
+prompt = 'Insira o valor do raio';
+r = input(prompt);
+
+
+%fazendo calculo do volume do objeto%
+v = pi .* pow2(r) .* h;
